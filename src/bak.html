@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <!--Google Font-->
+    <!-- font-family: "Gemunu Libre", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Google Font-->
+    <!-- font-family: "Open Sans", sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Tailwind Project</title>
+  </head>
+  <!--= HEADER -->
+  <!--! Header Section -->
+  <header class="bg-black py-6 lg:py-12 text-emir-grey">
+    <!--! Header Container-->
+    <div
+      class="container flex items-center justify-between space-x-8 lg:space-x-16"
+    >
+      <!--! Logo-->
+      <a class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold" href="#">EMİR</a>
+      <!--! Mobil Nav-->
+      <div class="block md:hidden">
+        <a class="cursor-pointer space-y-1 pr-4 text-2xl" href="#"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </div>
+      <!--! Nav-->
+      <nav class="hidden md:flex justify-between flex-1">
+        <!--! Menu-->
+        <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+          <a class="hover:text-emir-melon transition duration-500" href="#"
+            >Hakkında</a
+          >
+          <a
+            class="hover:text-emir-melon transition duration-500 whitespace-nowrap"
+            href="#"
+            >Eğitim ve Projeler</a
+          >
+          <a class="hover:text-emir-melon transition duration-500" href="#"
+            >Özgeçmiş</a
+          >
+          <a class="hover:text-emir-melon transition duration-500" href="#"
+            >İletişim</a
+          >
+        </div>
+        <!--! Login Area-->
+        <div class="flex items-center space-x-4 lg:space-x-8">
+          <!--! Search Area-->
+          <form class="whitespace-nowrap">
+            <div class="group border-r px-4 py-1 mx-4 border-emir-red">
+              <input
+                class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-emir-red focus:outline-none w-24 lg:w-44 transition duration-500"
+                type="text"
+              />
+              <button class="-ml-4 group-hover:ml-4 transition duration-500">
+                <i
+                  class="fa-solid fa-magnifying-glass group-hover:text-emir-red transition duration-500"
+                ></i>
+              </button>
+            </div>
+          </form>
+          <!--! Sign Up Area-->
+          <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+            <a
+              class="bg-emir-red px-3 py-1 hover:bg-rose-600 hover:text-emir-grey cursor-pointer transition duration-500"
+              href="#"
+              >CV İndir</a
+            >
+            <a
+              class="bg-emir-red px-3 py-1 hover:bg-rose-600 hover:text-emir-grey cursor-pointer transition duration-500 whitespace-nowrap"
+              href="#"
+              >Sosyal Medya</a
+            >
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!--= FIGURE-->
+  <figure
+    class="md:flex bg-slate-100 rounded-xl m-4 p-8 md:p-0 dark:bg-slate-800"
+  >
+    <img
+      class="w-24 h-24 px-8 py-1 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
+      src="https://placehold.co/500x500/png"
+      alt=""
+      width="384"
+      height="512"
+    />
+    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+      <blockquote>
+        <p class="text-lg font-medium text-white">
+          “Merhaba, ben Emir Behçet Muhammed. Bilgisayar mühendisliği alanında
+          kendini sürekli geliştiren ve teknolojiye olan tutkusunu her fırsatta
+          ortaya koyan bir yazılım geliştiricisiyim. Fenerbahçe Üniversitesi'nde
+          aldığım eğitimle, yazılım mühendisliği konusundaki teorik bilgileri
+          pratiğe dökme şansı buldum ve bu süreçte yüksek başarı göstererek
+          üniversiteden u.ö. alanında #birincilikle mezun oldum.”
+        </p>
+      </blockquote>
+      <figcaption class="font-medium">
+        <div class="text-sky-500 dark:text-sky-400">Behçet Muhammed</div>
+        <div class="text-slate-700 dark:text-slate-500">Türkiye, Istanbul</div>
+      </figcaption>
+    </div>
+  </figure>
+  <!--= SECTİON 1-->
+  <section class="bg-gray-300 flex items-center space-x-8 p-16 justify-around">
+    <div
+      class="bg-slate-100 w-96 h-44 rounded-md text-center p-4 text-4xl font-bold font-gemunu"
+    >
+      Eğitimler
+      <div class="text-sm text-start p-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ducimus
+        optio soluta quibusdam fuga, saepe dolorum beatae quidem ea voluptates,
+        dolores natus ut amet officiis. Sequi a odit laudantium autem?
+      </div>
+    </div>
+    <div
+      class="bg-slate-100 w-96 h-44 rounded-md text-center p-4 text-4xl font-bold font-gemunu"
+    >
+      Projeler
+      <div class="text-sm text-start p-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non ducimus
+        optio soluta quibusdam fuga, saepe dolorum beatae quidem ea voluptates,
+        dolores natus ut amet officiis. Sequi a odit laudantium autem?
+      </div>
+    </div>
+  </section>
+
+  <!--= SECTİON 2-->
+  <section class="bg-red-900 flex items-center space-x-8 justify-around">
+    <div
+      class="font-gemunu font-bold text-4xl p-2 m-4 items-center text-center"
+    >
+      <p class="text-gray-200 m-8">Çalışma Hayatım</p>
+      <img src="https://placehold.co/600x400/grey/white" alt="" />
+    </div>
+  </section>
+  <!--= FOOTER-->
+  <footer class="text-center text-md text-bold">
+    <p>&copy; 2024 Your Website</p>
+  </footer>
+</html>
